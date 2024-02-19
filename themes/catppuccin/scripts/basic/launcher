@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+theme_dir="~/.local/share/rofi/themes/catppuccin/basic"
+theme="$theme_dir/launcher_theme"
+
+rofi -show drun -theme $theme

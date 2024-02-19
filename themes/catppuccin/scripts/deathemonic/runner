@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+theme="~/.local/share/rofi/themes/catppuccin/deathemonic/runner.rasi"
+
+rofi \
+	-show run \
+	-scroll-method 0 \
+	-terminal foot \
+	-theme $theme
