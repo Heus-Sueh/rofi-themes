@@ -27,7 +27,7 @@ install_theme() {
         # Create theme directory
         mkdir -p "$target_theme_dir"
         # Copy theme files to themes directory
-        cp -r "$theme_dir"/* "$target_theme_dir/"
+        cp -r "$theme_dir/themes"/* "$target_theme_dir/"
         # Check if there are associated scripts
         if [ -d "$theme_dir/scripts" ]; then
             # Create script directory if it doesn't exist
