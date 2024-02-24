@@ -36,31 +36,35 @@ term="foot"
 rofi \
 	-show drun \
 	-terminal $term \
-	-kb-cancel Control-q \
+	-kb-cancel Escape \
 	-theme $launcher
 ```
 
-### Setting Up Shortcuts in Sway and Hyprland
+### Setting Up Shortcuts in your Window Manager
 
-To set up a shortcut to launch  your  Rofi script with your desired theme in Sway, you can add the following lines to your Sway config file (`~/.config/sway/config`):
+<details>
+    <summary><b>Sway</b></summary>
+    In Sway, you can add the following lines to your config file (`~/.config/sway/config`):
 
-```bash
-# Sway Config
-bindsym Mod1+d exec /path/to/your/launcher_script.sh
-```
+    ```bash
+    # Sway Config
+    bindsym Mod1+d exec /path/to/your/launcher_script.sh
+    ```
 
-Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+    Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+</details>
 
-In Hyprland, you can achieve similar functionality by adding the following lines to your configuration file (`~/.config/hypr/config`):
+<details>
+    <summary><b>Hyprland</b></summary>
+    In Hyprland, you can achieve similar functionality by adding the following lines to your configuration file (`~/.config/hypr/config`):
 
-```bash
-# Hyprland Config
-bind=Mod1+d, exec, /path/to/your/launcher_script.sh
-```
+    ```bash
+    # Hyprland Config
+    bind=Mod1+d, exec, /path/to/your/launcher_script.sh
+    ```
 
-Again, replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
-
-With these configurations, pressing `Mod1+d` (usually the `Alt` key plus `d`) will execute your launcher script, launching Rofi with the specified theme. Adjust the keybindings and paths as needed according to your preferences and file locations.
+    Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+</details>
 
 ### Directly Calling the Theme Directory
 
@@ -70,7 +74,7 @@ Alternatively, you can directly call Rofi with the theme file specified. For exa
 rofi \
 	-show drun \
 	-terminal kitty \
-	-kb-cancel Control-q \
+	-kb-cancel Escape \
 	-theme ~/.local/share/rofi/themes/catppuccin/basic/launcher_theme \
 ```
 

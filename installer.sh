@@ -6,6 +6,9 @@ themes_dir="$HOME/.local/share/rofi/themes"
 # Directory where scripts are located
 scripts_dir="$HOME/.local/share/rofi/scripts"
 
+# Directory where coloros are located
+colors_dir="$HOME/.local/share/rofi/colors"
+
 # Temporary directory for cloning the repository
 temp_dir=$(mktemp -d)
 
@@ -51,6 +54,9 @@ done
 
 # Copy the generic scripts to ~/.local/share/rofi/scripts
 cp -r "$temp_dir/scripts"/* "$scripts_dir/"
+
+# Copy the colors to ~/.local/share/rofi/colors
+cp -r "$temp_dir/colors"/* "$colors_dir/"
 
 echo "Installation complete."
 
