@@ -49,8 +49,8 @@ for theme_dir in "$temp_dir/themes"/*/; do
     fi
 done
 
-# Copy the generic_launcher to ~/.local/share/rofi/scripts
-cp "$temp_dir/scripts/generic_launcher" "$scripts_dir/"
+# Copy the generic scripts to ~/.local/share/rofi/scripts
+cp -r "$temp_dir/scripts"/* "$scripts_dir/"
 
 echo "Installation complete."
 
