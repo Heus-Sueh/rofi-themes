@@ -44,26 +44,22 @@ rofi \
 
 <details>
     <summary><b>Sway</b></summary>
-    In Sway, you can add the following lines to your config file (`~/.config/sway/config`):
+    In Sway, you can add the following lines to your config file (<code>`~/.config/sway/config`</code>):
 
-    ```bash
     # Sway Config
     bindsym Mod1+d exec /path/to/your/launcher_script.sh
-    ```
 
-    Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
 </details>
 
 <details>
     <summary><b>Hyprland</b></summary>
-    In Hyprland, you can achieve similar functionality by adding the following lines to your configuration file (`~/.config/hypr/config`):
+    In Hyprland, you can achieve similar functionality by adding the following lines to your configuration file (<code>~/.config/hypr/config</code>):
 
-    ```bash
     # Hyprland Config
     bind=Mod1+d, exec, /path/to/your/launcher_script.sh
-    ```
 
-    Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
 </details>
 
 ### Directly Calling the Theme Directory
