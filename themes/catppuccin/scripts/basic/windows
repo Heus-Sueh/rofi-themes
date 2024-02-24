@@ -4,7 +4,7 @@ launcher="~/.local/share/rofi/themes/catppuccin/basic/launcher_theme"
 term="foot"
 
 rofi \
-    -show drun \
+    -show window \
     -terminal $term \
 	-kb-cancel Escape \
     -theme $launcher

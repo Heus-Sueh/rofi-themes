@@ -15,31 +15,63 @@ All copyrights and credits for the original themes are reserved to their respect
 
 ## How to Use
 
-1. Run the installation script to install all themes:
+### 1. Run the installation script to install all themes:
 
-    ```bash
-    curl -sSL "https://raw.githubusercontent.com/Heus-Sueh/rofi-themes/main/installer.sh" | bash
-    ```
+```bash
+curl -sSL "https://raw.githubusercontent.com/Heus-Sueh/rofi-themes/main/installer.sh" | sh
+```
 
 This script will install all available themes into the ~/.local/share/rofi/themes/ directory and associated scripts into ~/.local/share/rofi/scripts/.
 
-2. Launcher Script
+### 2. Launcher Script
 
 You can use a launcher script to launch Rofi with the desired theme. Here's an example script:
 
 ```bash
 #!/usr/bin/env bash
-theme_dir="~/.local/share/rofi/themes/catppuccin/basic"
-theme="$theme_dir/launcher_theme"
-rofi -show drun -theme "$theme"
+theme_name="catppuccin/basic"
+theme_dir="~/.local/share/rofi/themes/$theme_name"
+launcher="$theme_dir/launcher_theme"
+term="foot"
+rofi \
+	-show drun \
+	-terminal $term \
+	-kb-cancel Control-q \
+	-theme $launcher
 ```
+
+### Setting Up Shortcuts in Sway and Hyprland
+
+To set up a shortcut to launch  your  Rofi script with your desired theme in Sway, you can add the following lines to your Sway config file (`~/.config/sway/config`):
+
+```bash
+# Sway Config
+bindsym Mod1+d exec /path/to/your/launcher_script.sh
+```
+
+Replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+
+In Hyprland, you can achieve similar functionality by adding the following lines to your configuration file (`~/.config/hypr/config`):
+
+```bash
+# Hyprland Config
+bind=Mod1+d, exec, /path/to/your/launcher_script.sh
+```
+
+Again, replace `/path/to/your/launcher_script.sh` with the actual path to your launcher script.
+
+With these configurations, pressing `Mod1+d` (usually the `Alt` key plus `d`) will execute your launcher script, launching Rofi with the specified theme. Adjust the keybindings and paths as needed according to your preferences and file locations.
 
 ### Directly Calling the Theme Directory
 
 Alternatively, you can directly call Rofi with the theme file specified. For example:
 
 ```bash
-rofi -show drun -theme ~/.local/share/rofi/themes/catppuccin/launcher_theme
+rofi \
+	-show drun \
+	-terminal kitty \
+	-kb-cancel Control-q \
+	-theme ~/.local/share/rofi/themes/catppuccin/basic/launcher_theme \
 ```
 
 This command launches Rofi with the specified theme file. Make sure to replace `~/.local/share/rofi/themes/catppuccin/basic/launcher_theme` with the actual path to your theme file.
@@ -58,5 +90,5 @@ Contributions are welcome! Feel free to add new themes or improve existing ones.
 
 ## License
 
-This repository is distributed under the [LICENSE](LICENSE) license. By using the themes in this repository, you agree to the terms of this license.
+This repository is distributed under the [MIT](LICENSE) license. By using the themes in this repository, you agree to the terms of this license.
 

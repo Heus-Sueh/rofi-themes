@@ -14,4 +14,4 @@ configuration{
     sidebar-mode: true;
 }
 
-@theme "catppuccin/catppuccin-mocha"
+@theme "catppuccin-mocha"

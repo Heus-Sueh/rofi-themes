@@ -2,11 +2,11 @@
 
 # change this variable to the theme you prefer
 theme="default/default"
-
 theme_dir="~/.local/share/rofi/themes/$theme"
+term="foot"
 
 rofi \
-    -show drun \
+    -show window \
     -terminal $term \
     -kb-cancel Escape \
     -theme $theme_dir
