@@ -1,0 +1,82 @@
+/***************************************************
+ * Name:    Name Colors
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
+
+/* Comment */
+
+* {
+    /***** [ Custom Colors ] *****/
+
+    bg0     : #1a1b26;
+    bg1     : #1f2335;
+    bg2     : #24283b;
+    bg3     : #414868;
+    fg0     : #c0caf5;
+    fg1     : #a9b1d6;
+    fg2     : #737aa2;
+    red     : #f7768e;
+    green   : #9ece6a;
+    yellow  : #e0af68;
+    blue    : #7aa2f7;
+    magenta : #9a7ecc;
+    cyan    : #4abaaf;
+
+    accent: @red;
+    urgent: @yellow;
+
+    background-color : transparent;
+    text-color       : @fg0;
+
+    /***** [ Elements ] *****/ 
+
+    background:             @bg1;
+    background-alt:         @bg0;
+    background-selected:    white;
+    background-active:      white;
+    background-urgent:      white;
+                            
+    foreground:             white;
+    foreground-alt:         white;
+    foreground-selected:    @bg1;
+    foreground-active:      white;
+    foreground-urgent:      white;
+                            
+    background-color:       transparent;
+    text-color:             white;
+    border-color:           @bg3;
+    separator-color:        white;
+    placeholder-color:      white; /* textbox placeholder */
+    handle-color:           @fg2; /* scrollbar handle */
+    normal:                 white;
+    selected:               white;
+    active:                 white;
+    urgent:                 white;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
+    placeholder: @placeholder-color;
+    handle: @handle-color;
+}

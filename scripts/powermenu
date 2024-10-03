@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+theme="../rasi/powermenu.rasi"
+sway_scripts="$HOME/.config/sway/scripts"
+
+options=(" Shutdown" " Reboot" " Suspend" " Hibernate" " Logout" " Lock screen")
+
+selected_option=$(printf "%s\n" "${options[@]}" | rofi -dmenu -p "Power menu" -theme $theme)
+
+case "$selected_option" in
+"Shutdown")
+	systemctl poweroff
+	;;
+"Reboot")
+	systemctl reboot
+	;;
+"Suspend")
+	systemctl suspend
+	;;
+"Hibernate")
+	systemctl hibernate
+	;;
+"Logout")
+	loginctl terminate-session $(loginctl | grep $(whoami) | awk '{print $1}')
+	;;
+"Lock screen")
+	sh $sway_scripts/swaylock.sh
+	;;
+*) ;;
+esac

@@ -1,8 +1,10 @@
 /***************************************************
- * Name:    Adapta
+ * Name:    Dracula Colors
  * Author:  Me
  * Date:    2024-09-28
  ***************************************************/
+
+/* Comment */
 
 * {
     /***** [ Colors ] *****/
@@ -15,35 +17,35 @@
 
     /***** [ Custom Colors ] *****/
 
-    color1:   #2F343FFF;
-    color2:   #383C4AFF;
-    color3:   #BAC5D0FF;
-    color4:   #5294E2FF;
-    color5:   #98C379FF;
-    color6:   #E06B74FF;
+    color1:   #282a36;
+    color2:   #f8f8f2;
+    color3:   #6272a4;
+    color4:   #bd93f9;
+    
+    accent: @color4;
 
     /***** [ Elements ] *****/ 
 
-    background:           @color1;
-    background-alt:       @color2;
-    background-selected:  @black;
-    background-active:    @black; 
-    background-urgent:    @black; 
+    background:          @color1;
+    background-alt:      @color3;
+    background-selected: @white;
+    background-active:   @white;
+    background-urgent:   @white;
     
-    foreground:           @color3;
-    foreground-alt:       @white;
-    foreground-selected:  @white;
-    foreground-active:    @white; 
-    foreground-urgent:    @white;
+    foreground:          @color3;
+    foreground-alt:      @color4;
+    foreground-selected: @white;
+    foreground-active:   @white;
+    foreground-urgent:   @white;
 
-    background-color:     @white;
-    text-color:           @white;
-    border-color:         @white;
-    separator-color:      @white;
-    normal:               @white;
-    selected:             @color4;
-    active:               @color5;
-    urgent:               @color6;
+    background-color:    @color1;
+    text-color:          @color2;
+    border-color:        @white;
+    separator-color:     @white;
+    normal:              @white;
+    selected:            @accent;
+    active:              @white;
+    urgent:              @white;
 
     /***** [ Aliases ] *****/
 

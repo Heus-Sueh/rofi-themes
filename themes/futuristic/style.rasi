@@ -1,0 +1,104 @@
+/***************************************************
+ * Name:     Futurist
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors/tokyonight.rasi"
+
+/* Comment */
+
+* {
+  font:   "Iosevka Nerd Font Medium 12";
+
+  margin  : 0;
+  padding : 0;
+  spacing : 0;
+}
+
+
+window {
+  location : center;
+  /* anchor   : west; */
+  width    : 40%;
+  /* height   : 100%; */
+  background-color: @bg;
+  border: 1px;
+  border-color: @border;
+  border-radius: 6px;
+}
+
+inputbar {
+  spacing  : 10px;
+  padding  : 4px 8px;
+  children : [ icon-search, entry ];
+  background-color: @bg-alt;
+}
+
+icon-search, entry, element-icon, element-text {
+  vertical-align: 0.5;
+}
+
+icon-search {
+  expand   : false;
+  filename : "search-symbolic";
+  size     : 14px;
+}
+
+textbox {
+  padding          : 4px 8px;
+  background-color : @bg-alt;
+}
+
+entry {
+  padding: 8px;
+}
+
+listview {
+  padding      : 4px 0px;
+  lines        : 12;
+  columns      : 1;
+  scrollbar    : true;
+  fixed-height : false;
+  dynamic      : true;
+}
+
+element {
+  padding : 10px 10px;
+  spacing : 8px;
+}
+
+element-icon, element-text, scrollbar {
+  cursor: pointer;
+}
+
+element normal urgent {
+  text-color: @urgent;
+}
+
+element normal active {
+  text-color: @accent;
+}
+
+element selected {
+  text-color       : @fg-sel;
+  background-color : @accent;
+}
+
+element selected urgent {
+  background-color: @urgent;
+}
+
+element-icon {
+  size: 0.8em;
+}
+
+element-text {
+  text-color: inherit;
+}
+
+scrollbar {
+  handle-width : 4px;
+  handle-color : @handle;
+  padding      : 0 4px;
+}

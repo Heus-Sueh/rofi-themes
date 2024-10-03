@@ -1,8 +1,10 @@
 /***************************************************
- * Name:    Adapta
+ * Name:    Modern Colors
  * Author:  Me
  * Date:    2024-09-28
  ***************************************************/
+
+/* Comment */
 
 * {
     /***** [ Colors ] *****/
@@ -15,35 +17,33 @@
 
     /***** [ Custom Colors ] *****/
 
-    color1:   #2F343FFF;
-    color2:   #383C4AFF;
-    color3:   #BAC5D0FF;
-    color4:   #5294E2FF;
-    color5:   #98C379FF;
-    color6:   #E06B74FF;
+    color1: 	#151515;
+    color2: 	#e8e8d3;
+    color3:		#687363;
+    color4:		#1c1c1c;
 
     /***** [ Elements ] *****/ 
 
     background:           @color1;
-    background-alt:       @color2;
-    background-selected:  @black;
-    background-active:    @black; 
+    background-alt:       @color4;
+    background-selected:  @color4;
+    background-active:    @color2; 
     background-urgent:    @black; 
     
-    foreground:           @color3;
+    foreground:           @color2;
     foreground-alt:       @white;
-    foreground-selected:  @white;
-    foreground-active:    @white; 
+    foreground-selected:  @color1;
+    foreground-active:    @color1; 
     foreground-urgent:    @white;
 
-    background-color:     @white;
-    text-color:           @white;
-    border-color:         @white;
+    background-color:     @color1;
+    text-color:           @color2;
+    border-color:         @color3;
     separator-color:      @white;
     normal:               @white;
-    selected:             @color4;
-    active:               @color5;
-    urgent:               @color6;
+    selected:             @color2;
+    active:               @white;
+    urgent:               @red;
 
     /***** [ Aliases ] *****/
 

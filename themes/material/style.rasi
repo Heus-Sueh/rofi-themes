@@ -1,0 +1,81 @@
+/***************************************************
+ * Name:     Material
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors/dracula.rasi"
+
+/* Comment */
+
+configuration {
+    font: "JetBrainsMono Nerd Font Medium 10";
+
+    drun {
+      display-name: "";
+    }
+
+    run {
+      display-name: "";
+    }
+
+    window {
+      display-name: "";
+    }
+
+    timeout {
+      delay: 10;
+      action: "kb-cancel";
+    }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+    transparency: "real";
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+inputbar {
+    background-color: @bg-alt;
+    children: [prompt, entry];
+}
+
+entry {
+    background-color: inherit;
+    padding: 12px 3px;
+}
+
+prompt {
+    background-color: inherit;
+    padding: 12px;
+}
+
+listview {
+    lines: 8;
+}
+
+element {
+    children: [element-icon, element-text];
+}
+
+element-icon {
+    padding: 10px 10px;
+}
+
+element-text {
+    padding: 10px 0;
+    text-color: @fg;
+}
+
+element-text selected {
+    text-color: @fg-sel;
+}

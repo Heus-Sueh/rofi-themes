@@ -1,0 +1,160 @@
+/***************************************************
+ * Name:     Bonito
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors/mocha.rasi"
+
+/* Comment */
+
+* {
+  font: "Iosevka 10";
+}
+
+configuration {
+    show-icons:                     true;
+    display-drun: 		              "";
+    drun-display-format:            "{icon} {name}";
+    disable-history:                false;
+    click-to-exit: 		              true;
+    location:                       0;
+}
+
+window {
+    transparency:                   "real";
+    background-color:               @bg;
+    text-color:                     @fg;
+    border:                         2px;
+    border-color:                   @border;
+    border-radius:                  10px;
+    width:                          500px;
+    anchor:                         center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+prompt {
+    enabled: 			                true;
+    padding: 			                8px;
+    background-color: 		        @bg;
+    text-color: 		              @accent;
+}
+
+textbox-prompt-colon {
+    expand: 			                  false;
+    str: 			                      "";
+    border-radius:                  100%;
+    background-color:               @sel;
+    text-color:                     @fg;
+    padding:                        8px 12px 8px 12px;
+    font:			                      "Iosevka Nerd Font 10";
+}
+
+entry {
+    background-color:               @bg;
+    text-color:                     @fg;
+    placeholder-color:              @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search...";
+    blink:                          true;
+    border:                  	      0px 0px 2px 0px;
+    border-color:                   @border;
+    border-radius:                  10px;
+    padding:                        8px;
+}
+
+inputbar {
+	  children: 		                [ textbox-prompt-colon, prompt, entry ];
+    background-color:               @bg;
+    text-color:                     @fg;
+    expand:                         false;
+    border:                  	      0px 0px 0px 0px;
+    border-radius:                  0px;
+    border-color:                   @border;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+case-indicator {
+    background-color:               @bg;
+    text-color:                     @fg;
+    spacing:                        0;
+}
+
+
+listview {
+    background-color:               @bg;
+    columns:                        1;
+    lines:			                    7;
+    spacing:                        4px;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @bg;
+    children:                       [ inputbar, listview ];
+    spacing:                        15px;
+    padding:                        15px;
+}
+
+element {
+    background-color:               @bg;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  4px;
+    padding:                        6px 6px 6px 6px;
+}
+
+element-icon {
+    background-color: 	            inherit;
+    text-color:       		          inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           24px;
+    border:                         0px;
+}
+
+element-text {
+    background-color: 		          inherit;
+    text-color:       		          inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         2px 0px 2px 2px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @urg;
+    text-color:                     @fg;
+    border-radius:                  9px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @bg-alt;
+    text-color:                     @fg;
+}
+
+element selected {
+    background-color:               @bg-alt;
+    text-color:                     @sel;
+    border:                  	      0px 0px 0px 0px;
+    border-radius:                  10px;
+    border-color:                   @border;
+}
+
+element selected.urgent {
+    background-color:               @urg;
+    text-color:                     @fg;
+}
+
+element selected.active {
+    background-color:               @bg-alt;
+    color:                          @fg;
+}

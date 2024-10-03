@@ -1,0 +1,84 @@
+/***************************************************
+ * Name:     Name
+ * Author:   Me
+ * Credits:  LR-Tech | https://github.com/lr-tech/rofi-themes-collection
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors.rasi"
+
+/* Comment */
+
+* {
+    font:             "Montserrat 9";
+    padding:          0px;
+    margin:           0px;
+}
+
+window {
+    fullscreen: true;
+    padding: 1em;
+    background-color: @bg;
+}
+
+mainbox {
+    padding:  8px;
+}
+
+inputbar {
+    background-color:   @bg-act;
+    margin:             0px calc( 50% - 120px );
+    padding:            2px 4px;
+    spacing:            4px;
+    border:             1px;
+    border-radius:      2px;
+    border-color:       @border;
+    children:           [icon-search,entry];
+}
+
+prompt {
+    enabled:  false;
+}
+
+icon-search {
+    expand:   false;
+    filename: "search";
+    vertical-align: 0.5;
+}
+
+entry {
+    placeholder:        "Search";
+    placeholder-color:  @placeholder;
+    padding: 10px;
+}
+
+listview {
+    margin:             48px calc( 50% - 560px );
+    spacing:            48px;
+    columns:            6;
+    fixed-columns:      true;
+}
+
+element, element-text, element-icon {
+    cursor: pointer;
+}
+
+element {
+    padding:             8px;
+    spacing:             4px;
+    orientation:         vertical;
+    border-radius:       16px;
+}
+
+element selected {
+    background-color: @accent;
+}
+
+element-icon {
+    size:             4em;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    horizontal-align: 0.5;
+}

@@ -1,0 +1,91 @@
+/***************************************************
+ * Name:    Latte Colors
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
+
+/* Comment */
+
+* {
+    /***** [ Colors ] *****/
+
+    /* don't delete these colors */
+
+    white:      #ffffff; 
+    black:      #000000;
+    red:        #ff0000;
+
+    /***** [ Custom Colors ] *****/
+    bg-col:           #eff1f5;
+    bg-col-light:     #eff1f520;
+    surface:          #ccd0da;
+    border-col:       #eff1f5;
+    selected-col:     #eff1f5;
+    blue:             #1e66f5;
+    fg-col:           #4c4f69;
+    fg-col2:          #d20f39;
+    grey:             #9ca0b0;
+
+    lavender:      #b4befe;
+    accent:        @blue;
+
+    /***** [ Elements ] *****/ 
+
+    background:             @bg-col;
+    background-alt:         @surface;
+    background-selected:    @bg-col;
+    background-active:      @white;
+    background-urgent:      @white;
+                            
+    foreground:             @fg-col;
+    foreground-alt:         @fg-col2;
+    foreground-selected:    @fg-col2;
+    foreground-active:      @white;
+    foreground-urgent:      @white;
+
+    button-bg:              @white;            
+    button-bg-alt:          @white;            
+    button-fg:              @white;
+    button-fg-alt:          @white;
+    button-bg-selected:     @white;
+    button-fg-selected:     @white;
+
+    background-color:       @fg-col;
+    text-color:             @white;
+    border-color:           @border-col;
+    separator-color:        @white;
+    placeholder-color:      @white; /* textbox placeholder */
+    handle-color:           @white; /* scrollbar handle */
+    normal:                 @white;
+    selected:               @white;
+    active:                 @white;
+    urgent:                 @white;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
+    placeholder: @placeholder-color;
+    handle: @handle-color;
+}
+
+// vim:ft=css

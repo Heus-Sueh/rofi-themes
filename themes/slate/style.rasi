@@ -1,0 +1,64 @@
+/***************************************************
+ * Name:     Slate
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors.rasi"
+
+/* Comment */
+
+window {
+    location: center;
+    height: 400;
+    border-radius: 8;
+    width: 500px;
+}
+
+inputbar {
+    border: 0 0 1px 0;
+    children: [prompt,entry];
+}
+
+prompt {
+    padding: 16px;
+    border: 0 1px 0 0;
+}
+
+textbox {
+    background-color: @bg;
+    border: 0 0 1px 0;
+    border-color: @border;
+    padding: 8px 16px;
+}
+
+entry {
+    padding: 16px;
+}
+
+listview {
+    cycle: false;
+    margin: 0 0 -1px 0;
+    scrollbar: false;
+}
+
+element {
+    border: 0 0 1px 0;
+    padding: 16px;
+}
+
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected {
+    background-color: @bg-sel;
+    color: @fg-sel;
+}

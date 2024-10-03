@@ -1,0 +1,68 @@
+/***************************************************
+ * Name:     Murz
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors.rasi"
+
+/* Comment */
+
+configuration {
+  font: "Iosevka Nerd Font Medium 12";
+
+  timeout {
+      delay: 10;
+      action: "kb-cancel";
+  }
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    border: 2px;
+    border-color: @border;
+    padding: 6px;
+    transparency: "real";
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+inputbar {
+    children: [entry];
+}
+
+entry {
+    padding: 10px;
+}
+
+listview {
+    lines: 10;
+    scrollbar: true;
+}
+
+scrollbar {
+    background-color: @bg-alt;
+    handle-color: @fg;
+    margin: 0 0 0 6px;
+}
+
+element {
+    children: [element-text];
+}
+
+element-text {
+    padding: 10px;
+}
+
+element-text selected {
+    background-color: @bg-sel;
+    text-color: @fg-sel;
+}

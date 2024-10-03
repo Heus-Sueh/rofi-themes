@@ -1,0 +1,87 @@
+/***************************************************
+ * Name:    Mocha Colors
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
+
+/* Comment */
+
+* {
+    /***** [ Colors ] *****/
+
+    /* don't delete these colors */
+
+    white:      #ffffff; 
+    black:      #000000;
+    red:        #ff0000;
+
+    /***** [ Custom Colors ] *****/
+
+    al:            #00000000;
+    bg:            #24273A;
+    se:            #1E1E2E;
+    fg:            #BF616A;
+    ac:            #24273A;
+    base:          #1e1e2e;
+    mantle:        #181825;
+    crust:         #11111b;
+    text:          #cdd6f4;
+    subtext0:      #a6adc8;
+    subtext1:      #bac2de;
+    blue:          #89b4fa;
+    lavender:      #b4befe;
+    sapphire:      #74c7ec;
+
+    accent:        @blue;
+
+    /***** [ Elements ] *****/ 
+
+    background:             @base;
+    background-alt:         @mantle;
+    background-selected:    @white;
+    background-active:      @white;
+    background-urgent:      @white;
+                            
+    foreground:             @subtext0;
+    foreground-alt:         @base;
+    foreground-selected:    @sapphire;
+    foreground-active:      @white;
+    foreground-urgent:      @white;
+                            
+    background-color:       @white;
+    text-color:             @subtext0;
+    border-color:           @white;
+    separator-color:        @white;
+    placeholder-color:      @white; /* textbox placeholder */
+    handle-color:           @white; /* scrollbar handle */
+    normal:                 @white;
+    selected:               @white;
+    active:                 @white;
+    urgent:                 @white;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
+    placeholder: @placeholder-color;
+    handle: @handle-color;
+}

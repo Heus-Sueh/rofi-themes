@@ -1,0 +1,133 @@
+/***************************************************
+ * Name:     Deathemonic
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors/mocha.rasi"
+
+/* Comment */
+
+configuration{
+    modi: "run,drun,window";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "Alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
+}
+
+
+window {
+    height: 50%;
+    weight: 30%;
+    border: 2px;
+    border-radius: 8px;
+    border-color: @accent;
+    background-color: @bg;
+}
+
+mainbox {
+    background-color: @bg;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 0px 20px 0px 0px;
+}
+
+prompt {
+    background-color: @accent;
+    padding: 6px;
+    text-color: white;
+    border-radius: 8px;
+    margin: 20px 0px 0px 20px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    border-radius: 8px;
+    border: 0px 0px 2px 0px;
+    border-color: @accent;
+    padding: 6px;
+    margin: 20px 0px 0px 10px;
+    text-color: @fg;
+    background-color: @bg-alt;
+}
+
+listview {
+    border: 0px 0px 0px;
+    border-radius: 8px;
+    padding: 6px 0px 0px;
+    margin: 10px 20px 0px 20px;
+    columns: 1;
+    lines: 6;
+    background-color: @bg-alt;
+}
+
+element {
+    padding: 5px;
+    background-color: @bg-alt;
+    text-color: @fg;
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element-icon {
+    size: 25px;
+}
+
+element selected {
+    text-color: @fg-sel;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    padding: 10px;
+    background-color: @bg;
+    text-color: @fg;
+    vertical-align: 0.5; 
+    horizontal-align: 0.5;
+}
+
+button selected {
+    border: 1px 0px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
+    border-color: @accent;
+    background-color: @accent;
+    text-color: white;
+}
+
+message {
+    background-color: @bg;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 8px;
+}
+
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @accent;
+    background-color: @bg;
+}

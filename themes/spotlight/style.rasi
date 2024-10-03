@@ -1,0 +1,86 @@
+/***************************************************
+ * Name:     Spotlight
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors/light.rasi"
+
+/* Comment */
+
+* {
+    font:   "Montserrat 12";
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    background-color:   @bg;
+    location:           center;
+    width:              640;
+    border-radius:      8;
+}
+
+inputbar {
+    font:       "Montserrat 20";
+    padding:    12px;
+    spacing:    12px;
+    children:   [ icon-search, entry ];
+}
+
+icon-search {
+    expand:     false;
+    filename:   "search";
+    size: 28px;
+}
+
+icon-search, entry, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+entry {
+    font:   inherit;
+    placeholder         : "Search";
+    placeholder-color   : @placeholder;
+    text-color: @fg;
+}
+
+message {
+    border:             2px 0 0;
+    border-color:       @border;
+    background-color:   @bg-alt;
+}
+
+textbox {
+    padding:    8px 24px;
+}
+
+listview {
+    lines:      10;
+    columns:    1;
+    fixed-height:   false;
+    border:         1px 0 0;
+    border-color:   @border;
+}
+
+element {
+    padding:            8px 16px;
+    spacing:            16px;
+    background-color:   transparent;
+    text-color: @fg;
+}
+
+element-text, element-icon {
+    text-color: inherit;
+}
+
+element selected, element active {
+    background-color:   @bg-sel;
+    text-color:         @fg-act;
+}
+
+element-icon {
+    size:   1em;
+}
+

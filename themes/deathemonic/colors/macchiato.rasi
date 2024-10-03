@@ -1,0 +1,78 @@
+/***************************************************
+ * Name:    Macchiato Colors
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
+
+/* Comment */
+
+* {
+
+    /***** [ Custom Colors ] *****/
+    bg-col:  #24273a;
+    bg-col-light: #24273a;
+    border-col: #24273a;
+    selected-col: #24273a;
+    fg-col: #cad3f5;
+    fg-col2: #ed8796;
+
+    grey: #6e738d;
+    blue: #8aadf4;
+    lavender:      #b4befe;
+    sapphire:      #74c7ec;
+
+    accent:        @sapphire;
+
+    /***** [ Elements ] *****/ 
+
+    background:             @bg-col;
+    background-alt:         @bg-col-light;
+    background-selected:    white;
+    background-active:      white;
+    background-urgent:      white;
+                            
+    foreground:             @fg-col;
+    foreground-alt:         @fg-col2;
+    foreground-selected:    @fg-col2;
+    foreground-active:      white;
+    foreground-urgent:      white;
+                            
+    background-color:       @fg-col;
+    text-color:             white;
+    border-color:           @border-col;
+    separator-color:        white;
+    placeholder-color:      white; /* textbox placeholder */
+    handle-color:           white; /* scrollbar handle */
+    normal:                 white;
+    selected:               white;
+    active:                 white;
+    urgent:                 white;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
+    placeholder: @placeholder-color;
+    handle: @handle-color;
+}
+
+// vim:ft=css

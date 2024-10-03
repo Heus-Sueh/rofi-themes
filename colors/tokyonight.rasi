@@ -1,16 +1,71 @@
-/**
- *
- * Author : Levi Lacoss (fishyfishfish55)
- * Github : @fishyfishfish55
- *
- * Colors
- **/
+/***************************************************
+ * Name:    Adapta
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
 
 * {
-    background:     #15161EFF;
-    background-alt: #1A1B26FF;
-    foreground:     #C0CAF5FF;
-    selected:       #33467CFF;
-    active:         #414868FF;
-    urgent:         #F7768EFF;
+    /***** [ Colors ] *****/
+
+    /* don't delete these colors */
+
+    white:      #ffffff; 
+    black:      #000000;
+    red:        #ff0000;
+
+    /***** [ Custom Colors ] *****/
+
+    color1:  #15161EFF;
+    color2:  #1A1B26FF;
+    color3:  #C0CAF5FF;
+    color4:  #33467CFF;
+    color5:  #414868FF;
+    color6:  #F7768EFF;
+
+    /***** [ Elements ] *****/ 
+
+    background:           @color1;
+    background-alt:       @color2;
+    background-selected:  @black;
+    background-active:    @black; 
+    background-urgent:    @black; 
+    
+    foreground:           @color3;
+    foreground-alt:       @white;
+    foreground-selected:  @white;
+    foreground-active:    @white; 
+    foreground-urgent:    @white;
+
+    background-color:     @white;
+    text-color:           @white;
+    border-color:         @white;
+    separator-color:      @white;
+    normal:               @white;
+    selected:             @color4;
+    active:               @color5;
+    urgent:               @color6;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
 }

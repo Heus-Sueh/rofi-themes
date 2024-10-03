@@ -1,0 +1,78 @@
+/***************************************************
+ * Name:     Minimal
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors.rasi"
+
+/* Comment */
+
+configuration {
+  font: "Iosevka Nerd Font Medium 12";
+
+  drun {
+      display-name: "[^.^]";
+  }
+
+  run {
+      display-name: "[°.°]";
+  }
+
+  window {
+      display-name: "[*.*]";
+  }
+
+  timeout {
+      delay: 10;
+      action: "kb-cancel";
+  }
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+inputbar {
+    children: [prompt, entry];
+}
+
+entry {
+    padding: 12px 0;
+    text-color: @accent;
+}
+
+prompt {
+    padding: 12px;
+    text-color: @accent;
+}
+
+listview {
+    lines: 8;
+}
+
+element {
+    children: [element-text];
+}
+
+element-text {
+    padding: 12px;
+    text-color: @fg-alt;
+}
+
+element-text selected {
+    text-color: @accent;
+}
+

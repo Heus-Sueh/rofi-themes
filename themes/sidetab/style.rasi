@@ -1,0 +1,84 @@
+/***************************************************
+ * Name:     Sidetab
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors/colors.rasi"
+
+/* Comment */
+
+* {
+    spacing: 2;
+    width: 30em;
+    margin: 0;
+    padding: 0;
+}
+
+#window {
+    background-color: @bg;
+    border: 0;
+    padding: 0;
+    location: west;
+    anchor: west;
+    height: 100%;
+    width:  30%;
+    margin: 0;
+}
+
+#mainbox {
+    background-color: @bg;
+    spacing: 10px;
+    margin: 10px 0 0 0;
+    width: 200px;
+}
+
+#inputbar {
+    children: [prompt,entry];
+    background-color: @bg;
+}
+
+#listview {
+    background-color: @bg;
+    fixed-height: true;
+    margin: 5px 0 0 10px;
+}
+
+#element {
+    padding: 5px;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element selected {
+    background-color: @bg-sel;
+    text-color: @fg-sel;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-icon {
+    background-color: inherit;
+    margin: 0 4px 0 0;
+    size: 25px;
+}
+
+#entry {
+   background-color: @bg;
+   text-color: @fg;
+   placeholder: "Search";
+   placeholder-color: @grey;
+   font: "Sora Regular 20";
+}
+
+#prompt {
+   background-color: @bg;
+   padding: 0 4px;
+   margin: 0 5px 0 0;
+   text-color: @fg;
+   font: "Sora Regular 20";
+}
+

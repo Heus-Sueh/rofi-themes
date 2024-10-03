@@ -1,0 +1,66 @@
+/***************************************************
+ * Name:    Name Colors
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
+
+/* Comment */
+
+* {
+    /***** [ Custom Colors ] *****/
+
+    color1:	#ffffff;
+    color2:	#3c4043;
+    color3:	#dee1e6;
+
+    /***** [ Elements ] *****/ 
+
+    background:             @color1;
+    background-alt:         @color3;
+    background-selected:    @color2;
+    background-active:      white;
+    background-urgent:      white;
+                            
+    foreground:             @color2;
+    foreground-alt:         white;
+    foreground-selected:    @color1;
+    foreground-active:      white;
+    foreground-urgent:      white;
+                            
+    background-color:       @color1;
+    text-color:             @color2;
+    border-color:           @color2;
+    separator-color:        white;
+    placeholder-color:      white; /* textbox placeholder */
+    handle-color:           white; /* scrollbar handle */
+    normal:                 white;
+    selected:               white;
+    active:                 white;
+    urgent:                 white;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
+    placeholder: @placeholder-color;
+    handle: @handle-color;
+}

@@ -1,6 +1,0 @@
-#!/bin/sh
-
-theme="~/.local/share/rofi/themes/catppuccin/basic"
-scripts="~/.local/share/rofi/scripts/catppuccin/basic"
-
-rofi -show p -modi p:$scripts/off -theme $theme/powermenu_theme.rasi

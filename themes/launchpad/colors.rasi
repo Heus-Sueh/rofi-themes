@@ -1,0 +1,78 @@
+/***************************************************
+ * Name:    Name Colors
+ * Author:  Me
+ * Date:    2024-09-28
+ ***************************************************/
+
+/* Comment */
+
+* {
+    /***** [ Colors ] *****/
+
+    /* don't delete these colors */
+
+    white:      #ffffff; 
+    black:      #000000;
+    red:        #ff0000;
+
+    /***** [ Custom Colors ] *****/
+
+    color1:   #24242480;
+    color2:   #363636;
+    color3:   #f5f5f520;
+    color4:   #f5f5f540;
+    color5:   #0860f2E6;
+    color6:   #f5f5f5;
+    color7:   #f5f5f580;
+
+    accent:   #63C1EC;
+
+    /***** [ Elements ] *****/ 
+
+    background:             @color1;
+    background-alt:         @color2;
+    background-selected:    @color5;
+    background-active:      @color3;
+    background-urgent:      @white;
+                            
+    foreground:             @color6;
+    foreground-alt:         @white;
+    foreground-selected:    @white;
+    foreground-active:      @white;
+    foreground-urgent:      @white;
+                            
+    background-color:       transparent;
+    text-color:             @color6;
+    border-color:           @color4;
+    separator-color:        @white;
+    placeholder-color:      @color3;
+    normal:                 @white;
+    selected:               @white;
+    active:                 @white;
+    urgent:                 @white;
+
+    /***** [ Aliases ] *****/
+
+    /* DO NOT TOUCH HERE */
+
+    bg: @background;
+    bg-alt: @background-alt;
+    bg-sel: @background-selected;
+    bg-act: @background-active; 
+    bg-urg: @background-urgent; 
+
+    fg: @foreground;
+    fg-alt: @foreground-alt;
+    fg-sel: @foreground-selected;
+    fg-act: @foreground-active; 
+    fg-urg: @foreground-urgent;
+
+    sel: @selected;
+    act: @active;
+    urg: @urgent;
+    text: @text-color;
+    txt: @text-color;
+    border: @border-color;
+    separator: @separator-color;
+    placeholder: @placeholder-color;
+}

@@ -1,0 +1,87 @@
+/***************************************************
+ * Name:     Name
+ * Author:   Me
+ * Date:     2024-09-28
+ ***************************************************/
+
+@import "colors.rasi"
+
+/* Comment */
+
+configuration {
+  font: "Iosevka Nerd Font Medium 12";
+
+  drun {
+      display-name: "";
+  }
+
+  run {
+      display-name: "";
+  }
+
+  window {
+      display-name: "";
+  }
+
+  timeout {
+      delay: 10;
+      action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+    border: 2px;
+    border-color: @blue-alt;
+    border-radius: 6px;
+    padding: 6px;
+    transparency: "real";
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+inputbar {
+    border: 0 0 0 2px;
+    border-color: @blue;
+    border-radius: 6px;
+    children: [entry];
+    margin: 0 0 6px 0;
+}
+
+entry {
+    background-color: @entry-bg;
+    padding: 10px;
+    text-color: @entry-fg;
+}
+
+listview {
+    lines: 10;
+}
+
+element {
+    border: 0 0 0 2px;
+    border-color: @bg;
+    children: [element-text];
+}
+
+element selected {
+    border-color: @sel;
+    border-radius: 6px;
+}
+
+element-text {
+    padding: 10px;
+}
+
+element-text selected {
+    background-color: @bg-sel;
+    text-color: @fg-sel;
+}
