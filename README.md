@@ -21,7 +21,7 @@ All copyrights and credits for the original themes are reserved to their respect
 curl -sSL "https://raw.githubusercontent.com/Heus-Sueh/rofi-themes/main/installer.sh" | sh
 ```
 
-This script will install all available themes into the ~/.local/share/rofi/themes/ directory and associated scripts into ~/.local/share/rofi/scripts/.
+This script will install all available themes into the `~/.local/share/rofi/themes` directory and associated scripts into `~/.local/share/rofi/scripts`.
 
 ### 2. Launcher Script
 
@@ -29,10 +29,10 @@ You can use a launcher script to launch Rofi with the desired theme. Here's an e
 
 ```bash
 #!/usr/bin/env bash
-theme_name="catppuccin/basic"
+theme_name="minimal"
 theme_dir="~/.local/share/rofi/themes/$theme_name"
-launcher="$theme_dir/launcher_theme"
-term="foot"
+launcher="$theme_dir/style.rasi"
+term="alacritty"
 rofi \
 	-show drun \
 	-terminal $term \
@@ -71,10 +71,10 @@ rofi \
 	-show drun \
 	-terminal kitty \
 	-kb-cancel Escape \
-	-theme ~/.local/share/rofi/themes/catppuccin/basic/launcher_theme \
+	-theme ~/.local/share/rofi/themes/minimal/style.rasi \
 ```
 
-This command launches Rofi with the specified theme file. Make sure to replace `~/.local/share/rofi/themes/catppuccin/basic/launcher_theme` with the actual path to your theme file.
+This command launches Rofi with the specified theme file. Make sure to replace `~/.local/share/rofi/themes/minimal/style.rasi` with the actual path to your theme file.
 
 ### Note
 
